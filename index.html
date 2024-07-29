@@ -273,7 +273,22 @@
             .marquee-item {
                 width: 100px;
             }
-        }</style>
+        }
+        @media (min-width: 992px) {
+            .navbar-header{
+                display: flex;
+                flex-direction: row;
+                padding-right: 710px;
+                align-items: center;
+            }
+            .navbar-menu{
+                display: flex;
+                padding-left: 750px;
+                align-items: center;
+
+            }
+        }
+        </style>
 </head>
 
 <body>
@@ -297,10 +312,10 @@
             <div class="menu-text" onclick="toggleMenu()">Menu</div>
         </div>
         <ul class="navbar-menu">
-            <li><a href="#class">Class</a></li>
+            <li><a href="#class">Programs</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">FAQ's</a></li>
         </ul>
     </nav>
     </div>
