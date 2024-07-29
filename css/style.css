@@ -4139,10 +4139,10 @@ input[type="button"].btn-block {
 
 .menu-text {
   display: none;
-  font-size: 14px;
+  font-size: 34px;
   cursor: pointer;
   color: rgb(0, 0, 0);
-  padding: 6px;
+  padding: 5px;
   background-color: #ffffff;
   border-radius: 2px;
 }
@@ -4163,8 +4163,8 @@ input[type="button"].btn-block {
 .navbar-menu a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  font-size: 18px;
-  padding: 5px 10px;
+  font-size: 22px;
+  padding: 5px 5px ;
 }
 
 .navbar-menu a:hover {
