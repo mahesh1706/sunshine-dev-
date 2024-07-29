@@ -4140,12 +4140,16 @@ input[type="button"].btn-block {
 
 .menu-text {
   display: none;
-  font-size: 34px;
+  font-size: 24px;
   cursor: pointer;
   color: rgb(0, 0, 0);
- 
+ padding: 5px;
+ justify-content: center;
+ align-items: center;
   background-color: #ffffff;
-  border-radius: 2px;
+  border-radius: 4px;
+  flex-direction: row;
+
 }
 
 .navbar-menu {
@@ -4177,6 +4181,8 @@ input[type="button"].btn-block {
 @media (max-width: 360px) {
   .menu-text {
       display: block;
+      justify-content: center;
+      align-items: center;
   }
 
   .navbar-menu {

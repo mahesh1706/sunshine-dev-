@@ -294,10 +294,10 @@
             }
 
             .navbar-menu{
-                display: flex;
-                padding-left: 750px;
+                
+             
                 align-items: center;
-                padding-bottom: ;
+                
               
 
             }
@@ -316,26 +316,39 @@
     </div>
     <!-- Navbar Start -->
     <nav class="navbar">
-        <div class="navbar1">
-            <div class="navbar2">
-            <img src="/img/base.png" alt="Logo" class="logo mt-2" >
-        </div>
-            <img  src="/img/sunt.png" alt="Logo" class="logo1 mt-2" >
-      
+        <div class="container-fluid">
+        <div class="navbar1 d-flex row ">
+
+            <div class=" col-lg-1 col-md-12 col-sm-12 navbar2 flex-row mb-3 p-2 d-flex justify-content-lg-start justify-content-md-center justify-content-center">
+            <img src="/img/base.png" alt="Logo" class="logo " >
+            </div>
+        <div class="col-lg-1 col-md-12 col-sm-12 d-flex justify-content-lg-start  justify-content-md-center justify-content-center">
+            <img  src="/img/sunt.png" alt="Logo" class="logo1 " >
+            </div>
+           
+           
            
 <hr>
-            
-            <div class="menu-text" onclick="toggleMenu()">Menu</div>
+
+          
         
-        <ul class="navbar-menu ">
-            <li><a href="#class">Programs</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">FAQ's</a></li>
-        </ul>
+            <div class="  col-lg-10 col-md-12 mt-2 d-flex justify-content-lg-end justify-content-md-center ">
+                <nav >
+                    <ul class="list-inline navbar-menu  ">
+                        <li class="list-inline-item"><a class="text-white text-decoration-none" href="#">Programs</a></li>
+                        <li class="list-inline-item"><a class="text-white text-decoration-none" href="#">About</a></li>
+                        
+                        <li class="list-inline-item"><a class="text-white text-decoration-none" href="#">Gallery</a></li>
+                        <li class="list-inline-item"><a class="text-white text-decoration-none" href="#">FAQ's</a></li>
+                    </ul>
+                    <div class="menu-text " onclick="toggleMenu()">Menu</div>
+                </nav>
+            </div>
     </div>
     </nav>
+</div>
     </div>
+    
     <!-- Navbar End -->
     <div class="morph-button morph-button-modal morph-button-modal-2 morph-button-fixed"></div>
 
