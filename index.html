@@ -275,16 +275,29 @@
             }
         }
         @media (min-width: 992px) {
-            .navbar-header{
+            .navbar1{
                 display: flex;
                 flex-direction: row;
-                padding-right: 1010px;
+              
                 align-items: center;
             }
+        }
+
+            @media (min-width: 992px) {
+            .navbar2{
+               
+           
+                justify-content: center;
+              
+                align-items: center;
+               
+            }
+
             .navbar-menu{
                 display: flex;
                 padding-left: 750px;
                 align-items: center;
+                padding-bottom: ;
               
 
             }
@@ -303,21 +316,24 @@
     </div>
     <!-- Navbar Start -->
     <nav class="navbar">
-        <div class="navbar-header ">
-            <img src="/img/base.png" alt="Logo" class="logo" >
+        <div class="navbar1">
+            <div class="navbar2">
+            <img src="/img/base.png" alt="Logo" class="logo mt-2" >
+        </div>
             <img  src="/img/sunt.png" alt="Logo" class="logo1 mt-2" >
       
            
 <hr>
             
             <div class="menu-text" onclick="toggleMenu()">Menu</div>
-        </div>
+        
         <ul class="navbar-menu ">
             <li><a href="#class">Programs</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">FAQ's</a></li>
         </ul>
+    </div>
     </nav>
     </div>
     <!-- Navbar End -->
