@@ -364,7 +364,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 d-flex m-3 p-3">
                
-                <div class="card-body rounded-bottom bg-primary p-5">
+                <div class="card-body rounded-bottom bg-primary p-4" style="background-color: #FFEE00 !important;">
                     <form>
                         <h2 class="d-flex justify-content-center p-3">Admission Form</h2>
                         <h6>Please fill your details</h6>
@@ -373,13 +373,13 @@
                         </div>
                         
                         <div class="form-group">
-                            <input type="text" class="form-control border-0 p-4 name " placeholder="Name of the Child " required="required" />
+                            <input type="text" class="form-control border-0 p-4 child " placeholder="Name of the Child " required="required" />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control border-0 p-4 name " placeholder="Age of the Child " required="required" />
+                            <input type="text" class="form-control border-0 p-4 age " placeholder="Age of the Child " required="required" />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control border-0 p-4 name " placeholder="Phone Number  " required="required" />
+                            <input type="text" class="form-control border-0 p-4 number" placeholder="Phone Number  " required="required" />
                         </div>
                         <div class="form-group">
                             <select class="custom-select border-0 px-4 class" style="height: 47px;">
@@ -396,7 +396,7 @@
                     
                     </form>
                     <div class="video-container  pt-5 ">
-                        <h5 class="d-flex justify-content-center">Google Reviews By Happy Parents <span >⭐️⭐️⭐️⭐️⭐️</span></h5>
+                        <h5 class="d-flex justify-content-center">Google Reviews By Happy Parents </h5>
                         <video autoplay loop muted playsinline>
                          
                             <source src="/img/review.mkv" type="video/mp4">
@@ -414,10 +414,10 @@
             <div class="col-lg-4 col-md-6 col-sm-12 d-flex m-3 p-3 justify-content-lg-center ">
                 <div class="col-12">
                     <div class="d-flex flex-column flex-md-row bg-light rounded-3 p-3 mb-4">
-                        <div class="flex-grow-1 p-3 bg-warning rounded-3 me-md-3 mb-3 mb-md-0">
+                        <div class="flex-grow-1 p-3  rounded-3 me-md-3 mb-3 mb-md-0" style="background-color: #FFEE00;">
                             <h4 class="text-center">Nurturing Enviroment </h4>
                         </div>
-                        <div class="flex-grow-1 p-3 bg-info rounded-3">
+                        <div class="flex-grow-1 p-3  rounded-3" style="background-color: #FFEE00;">
                             <h4 class="text-center"> Grow, Learn and Have Fun Too</h4>
                         </div>
                     </div>
@@ -957,12 +957,16 @@ Thank u so much Lakshmi ma'am🙏
             var phoneNumber = "9487562182";
     
             var name = document.querySelector(".name").value;
-            var email = document.querySelector(".email").value;
+            var child = document.querySelector(".child").value;
+            var age = document.querySelector(".age").value;
+            var number = document.querySelector(".number").value;
             var selectedClass = document.querySelector(".class").value;
     
             var url = "https://wa.me/" + phoneNumber + "?text="
                 + "*Name:* " + encodeURIComponent(name) + "%0a"
-                + "*Email:* " + encodeURIComponent(email) + "%0a"
+                + "*Child:* " + encodeURIComponent(child) + "%0a"
+                + "*Age:* " + encodeURIComponent(age) + "%0a"
+                + "*Number:* " + encodeURIComponent(number) + "%0a"
                 + "*Selected Class:* " + encodeURIComponent(selectedClass);
                 
     
