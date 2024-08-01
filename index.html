@@ -22,6 +22,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
         </style>
     <!-- Libraries Stylesheet -->
+    
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link rel="icon" href="/img/Sunshine logo.png">
@@ -302,24 +303,28 @@
 
             }
         }
+
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        } 
         </style>
 </head>
 
 <body>
     
-     <div class="top-nav ">
-        <div class="row">
-            <div class="col px-5"><a class="nav-link h5 " href="#careers">Careers</a>
-            <a class="nav-link px-2 h5" href="#enroll">Enroll</a>
-            </div>
-        </div>
-    </div>
     <!-- Navbar Start -->
     <nav class="navbar">
         <div class="container-fluid">
         <div class="navbar1 d-flex row ">
 
-            <div class=" col-lg-1 col-md-12 col-sm-12 navbar2 flex-row mb-3 p-2 d-flex justify-content-lg-start justify-content-md-center justify-content-center">
+            <div class=" col-lg-1 col-md-12 col-sm-12 navbar2 flex-row mb-3 p-2 d-flex justify-content-lg-end justify-content-md-center justify-content-center">
             <img src="/img/base.png" alt="Logo" class="logo " >
             </div>
         <div class="col-lg-1 col-md-12 col-sm-12 d-flex justify-content-lg-start  justify-content-md-center justify-content-center">
@@ -332,132 +337,183 @@
 
           
         
-            <div class="  col-lg-10 col-md-12 mt-2 d-flex justify-content-lg-end justify-content-md-center ">
+            <div class="  col-lg-10 col-md-12 mt-2 d-flex justify-content-lg-center justify-content-md-center ">
                 <nav >
                     <ul class="list-inline navbar-menu  ">
-                        <li class="list-inline-item"><a class="text-white text-decoration-none" href="#">Programs</a></li>
-                        <li class="list-inline-item"><a class="text-white text-decoration-none" href="#">About</a></li>
+                        <li class="list-inline-item"><a  href="#">Programs</a></li>
+                        <li class="list-inline-item"><a  href="#">About</a></li>
                         
-                        <li class="list-inline-item"><a class="text-white text-decoration-none" href="#">Gallery</a></li>
-                        <li class="list-inline-item"><a class="text-white text-decoration-none" href="#">FAQ's</a></li>
+                        <li class="list-inline-item"><a class="" href="#">Gallery</a></li>
+                        <li class="list-inline-item"><a class="" href="#">Contact</a></li>
                     </ul>
-                    <div class="menu-text " onclick="toggleMenu()">Menu</div>
+                   
                 </nav>
+                
             </div>
     </div>
     </nav>
+    <div class="menu-text " onclick="toggleMenu()">Menu</div>
 </div>
+
+    </div>
+  
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mt-4 d-flex justify-content-center">
+                <img src="/img/sunshine.png" class="img-fluid "  width="400px" height="30px" >
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex m-3 p-3">
+               
+                <div class="card-body rounded-bottom bg-primary p-5">
+                    <form>
+                        <h2 class="d-flex justify-content-center p-3">Admission Form</h2>
+                        <h6>Please fill your details</h6>
+                        <div class="form-group">
+                            <input type="text" class="form-control border-0 p-4 name" placeholder="Name of the Parent" required="required" />
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-control border-0 p-4 name " placeholder="Name of the Child " required="required" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control border-0 p-4 name " placeholder="Age of the Child " required="required" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control border-0 p-4 name " placeholder="Phone Number  " required="required" />
+                        </div>
+                        <div class="form-group">
+                            <select class="custom-select border-0 px-4 class" style="height: 47px;">
+                                <option selected>Select Program Category</option>
+                                <option value="1">Pre School</option>
+                                <option value="2">Play School</option>
+                                <option value="3">Day School</option>
+                                <option value="3">After-school care</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="btn btn-secondary btn-block border-0 py-3" type="button" onclick="sendWhatsApp();">Submit </button>
+                        </div>
+                    
+                    </form>
+                    <div class="video-container  pt-5 ">
+                        <h5 class="d-flex justify-content-center">Google Reviews By Happy Parents <span >⭐️⭐️⭐️⭐️⭐️</span></h5>
+                        <video autoplay loop muted playsinline>
+                         
+                            <source src="/img/review.mkv" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>\
+                        <div>
+                        <button class="btn btn-danger btn-block  p-2" type="button" ">Check Out 💬 Google Reviews </button>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex m-3 p-3 justify-content-lg-center ">
+                <div class="col-12">
+                    <div class="d-flex flex-column flex-md-row bg-light rounded-3 p-3 mb-4">
+                        <div class="flex-grow-1 p-3 bg-warning rounded-3 me-md-3 mb-3 mb-md-0">
+                            <h4 class="text-center">Nurturing Enviroment </h4>
+                        </div>
+                        <div class="flex-grow-1 p-3 bg-info rounded-3">
+                            <h4 class="text-center"> Grow, Learn and Have Fun Too</h4>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3 p-4 shadow mb-4">
+                        <p class="mb-0">
+                            Sunshine ensures child friendly, warm environment where each child is valued, loved and feels safe and comfortable. We provide a strong foundation for overall development, well being and healthy habits. We help the child explore naturally in all areas of learning including literacy and numeracy.
+                        </p>
+                    </div>
+                <div class="mb-4">
+                    <div id="myCarousel" class="carousel slide m-2" data-bs-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                        </ol>
+                    
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/img/onam.jpg" class="img-fluid w-100" alt="Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/eid.jpg" class="img-fluid w-100" alt="Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/fri.jpg" class="img-fluid w-100" alt="Image 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/fes.jpg" class="img-fluid w-100" alt="Image 4">
+                            </div>
+                        </div>
+                    
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 d-flex m-3 p-3  ">
+                <div class="row">
+                    <div class="col-12"> 
+                        <aside class="sidebar">
+                            <span class="btn-icon h1">🔗</span>
+                                   <h1>Quick Links</h1>
+                            <nav class="magic-nav">
+                               
+                                    
+                                
+                                <a href="#" class="magic-btn floating p-5" data-aos="fade-right" data-aos-delay="100">
+                                    <span class="btn-icon p-2">📒</span>
+                                    <h6>Download Broucher </h6>
+                                </a>
+                                <a href="#" class="magic-btn floating p-5" data-aos="fade-right" data-aos-delay="200">
+                                    <span class="btn-icon">🎭</span>
+                                   <h6> Programs</h6>
+                                </a>
+                                <a href="#" class="magic-btn floating p-5" data-aos="fade-right" data-aos-delay="300">
+                                    <span class="btn-icon">📸</span>
+                                   <h6>Photos</h6> 
+                                </a>
+                                <a href="#" class="magic-btn floating p-5 " data-aos="fade-right" data-aos-delay="400">
+                                    <span class="btn-icon">📣</span>
+                                    <h6>Testimonials</h6> 
+                                </a>
+                              
+                            </nav>
+                        </aside>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <!-- Navbar End -->
     <div class="morph-button morph-button-modal morph-button-modal-2 morph-button-fixed"></div>
 
     <!-- Header Start -->
-    <div class=" text-center ">
+    
         
-            <div class=" mt-4"><img src="/img/sunshine.png" class="img-fluid "  width="400px" height="30px" >
-                
-                 
-               
-        
-              <div class="container mt-5">
-                <div class="row">
-                  
-                    <div class="col-12">
-                        <div class="d-flex flex-column flex-md-row bg-light rounded-3 p-3 mb-4">
-                            <div class="flex-grow-1 p-3 bg-warning rounded-3 me-md-3 mb-3 mb-md-0">
-                                <h2 class="text-center">Nurturing Enviroment </h2>
-                            </div>
-                            <div class="flex-grow-1 p-3 bg-info rounded-3">
-                                <h3 class="text-center"> Grow, Learn and Have Fun Too</h3>
-                            </div>
-                        </div>
-                        
-                          <div class="col-12">
-                              <div class="marquee">
-                                  <div class="marquee-content">
-                                      <div class="marquee-item">
-                                          <img src="/img/Preschool.png" alt="Image 1">
-                                      </div>
-                                      <div class="marquee-item">
-                                          <img src="/img/Daycare.png" alt="Image 2">
-                                      </div>
-                                      <div class="marquee-item">
-                                          <img src="/img/afterschool 1.png" alt="Image 3">
-                                      </div>
-                                      <div class="marquee-item">
-                                          <img src="/img/play group.png" alt="Image 4">
-                                      </div>
-                                      
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      </div>
-                        <div class="bg-white rounded-3 p-4 shadow mb-4">
-                            <p class="mb-0">
-                                Sunshine ensures child friendly, warm environment where each child is valued, loved and feels safe and comfortable. We provide a strong foundation for overall development, well being and healthy habits. We help the child explore naturally in all areas of learning including literacy and numeracy.
-                            </p>
-                        </div>
-        
-                        <div class="mb-4">
-                            <div id="myCarousel" class="carousel slide m-2" data-bs-ride="carousel">
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-                                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-                                    <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
-                                </ol>
-                            
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="/img/onam.jpg" class="img-fluid w-100" alt="Image 1">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/img/eid.jpg" class="img-fluid w-100" alt="Image 2">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/img/fri.jpg" class="img-fluid w-100" alt="Image 3">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/img/fes.jpg" class="img-fluid w-100" alt="Image 4">
-                                    </div>
-                                </div>
-                            
-                                <!-- Left and right controls -->
-                                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                      
 
      
     <!-- Header End -->
 
     <!-- About Start -->
-    <div class="row justify-content-center mb-5">
-      <div class="col-12 col-md- text-center">
-          <button class="btn btn-primary btn-lg btn-enroll mb-3 mb-md-0">Enroll Now</button>
-      </div>
-      <div class="col-12 col-md-6 text-center">
-          <a href="#" class="btn btn-outline-secondary btn-lg">Download Brochure</a>
-      </div>
-      <div class="col-12 col-md-6 text-center">
-        <a href="#" class="btn btn-outline-secondary btn-lg">Gallery</a>
-    </div>
-  </div>
-</div>
-
+   
                
                 
                 
