@@ -9709,7 +9709,7 @@ a.text-dark:hover, a.text-dark:focus {
 .floating {
   animation: float 3s ease-in-out infinite;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .page-wrapper {
       flex-direction: column;
   }
@@ -9719,12 +9719,32 @@ a.text-dark:hover, a.text-dark:focus {
       margin-bottom: 20px;
   }
   .magic-nav {
-      flex-direction: row;
+      flex-direction:row;
       flex-wrap: wrap;
       justify-content: center;
   }
   .magic-btn {
-      width: 80px;
+      width: 250px;
       height: 80px;
   }
+}
+
+@media (max-width : 576px) {
+  .page-wrapper {
+    flex-direction: column;
+}
+.sidebar {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+}
+.magic-nav {
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.magic-btn {
+    width: 120px;
+    height: 80px;
+}
 }
